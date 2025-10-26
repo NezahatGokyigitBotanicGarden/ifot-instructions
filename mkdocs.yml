@@ -1,0 +1,170 @@
+# Project information
+site_name: Resimli Türkiye Florası Yazım Kuralları
+site_url: https://yazimkurallari.turkiyeflorasi.org.tr/
+
+# Repository
+repo_name: ifot-instructions
+repo_url: https://github.com/demirogun/ifot-instructions
+
+# Copyright
+copyright: Copyright &copy; 2025 Ali Nihat Gökyiğit Vakfı
+
+# Configuration
+theme:
+  name: material
+  logo: assets/od_logo.png
+  language: tr
+  custom_dir: src/overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Karanlık Mod
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Aydınlık Mod
+
+  font:
+    text: Ubuntu
+    code: Roboto Mono
+  favicon: assets/od_logo.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - blog:
+      blog_toc: true
+      post_date_format: long
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_slugify_separator: _
+
+# Additional configuration
+extra:
+  annotate:
+    json: [.s2]
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: demirogun
+      repo: ogundemir-cv
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.blocks.caption
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Ana Sayfa: index.md
+  - Yazım Kuralları: yazim_kurallari.md
+  - Genel Çizim Kuralları: genel_cizim_kurallari.md
+  - Yazar/Ressam Çalışma Rehberi: yazar_ressam_calisma_rehberi.md
+  - RTF Editörler Heyeti: rtf_editorler_heyeti.md
+  - Ekler:
+    - Ek 1 - Familya Sırası: ekler/ek1.md
+    - Ek 2 - Adlandırma: ekler/ek2.md
+    - Ek 3 - Şekilli Anahtar Örneği: ekler/ek3.md
+    - Ek 4 - Betimler: ekler/ek4.md
+    - Ek 5 - Sözcükler: ekler/ek5.md
+    - Ek 6 - Yayılışlar: ekler/ek6.md
+    - Ek 7 - Kaynaklar: ekler/ek7.md
+    - Ek 8 - Kısaltmalar: ekler/ek8.md
+    - Ek 9 - Tip Yazımı: ekler/ek9.md
+    - Ek 10 - Kontrol Listesi: ekler/ek10.md
+    - Ek 11 - Sinonim Yazımı: ekler/ek11.md
+    - Ek 12 - Türkçe Adlar Sistemi: ekler/ek12.md
+  - Mali Rehber:
+    - Mali Konular: mali_rehber/mali_konular.md
+    - Belgesiz Masraf: mali_rehber/belgesiz_masraf.md
+    - Seyahat Onay Belgesi: mali_rehber/seyahat_onay_belgesi.md
+    - Yurtdışı Belgeli Harcama: mali_rehber/yurtdisi_belgeli_harcama.md
+  - Blog:
+      - blog/index.md
+
