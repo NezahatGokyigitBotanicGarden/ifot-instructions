@@ -7,7 +7,7 @@
 **Illustrated Flora of Türkiye - Instructions for Authors, Illustrators and Editors**
 
 [![build](https://github.com/demirogun/ifot-instructions/actions/workflows/build.yml/badge.svg)](https://github.com/demirogun/ifot-instructions/actions/workflows/build.yml)
-[![Quality Gate Status](https://sonarqube.turkiyeflorasi.org.tr/api/project_badges/measure?project=NezahatGokyigitBotanicGarden_ifot-instructions_ad6ef117-0924-46c8-aff1-d19428bfbc8d&metric=alert_status&token=sqb_451e9a6e591fc266c4d1e796f65458af8169425a)](https://sonarqube.turkiyeflorasi.org.tr/dashboard?id=NezahatGokyigitBotanicGarden_ifot-instructions_ad6ef117-0924-46c8-aff1-d19428bfbc8d)
+[![Quality Gate Status](https://sonarqube.turkiyeflorasi.org.tr/api/project_badges/measure?project=NezahatGokyigitBotanicGarden_ifot-instructions_42b4397f-4f8d-46c4-a2c3-fc6e8f482c28&metric=alert_status&token=sqb_188ef10effee4234611e93178b0e77d3013ac3b0)](https://sonarqube.turkiyeflorasi.org.tr/dashboard?id=NezahatGokyigitBotanicGarden_ifot-instructions_42b4397f-4f8d-46c4-a2c3-fc6e8f482c28)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 [**Website**](https://yazimkurallari.turkiyeflorasi.org.tr/) • [**Documentation**](https://yazimkurallari.turkiyeflorasi.org.tr/)
