@@ -39,7 +39,7 @@ The guidelines cover all aspects of scientific botanical documentation, from tax
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - pip (Python package installer)
 
 ### Installation
